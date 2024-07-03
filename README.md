@@ -1,7 +1,7 @@
 # ShoppingCartAPI
 
 ## Overview
-ShoppingCartAPI is a simple web API for managing a shopping cart. It allows users to add items to their shopping cart and view the items in the cart using session storage to maintain state across multiple HTTP requests.
+ShoppingCartAPI is a web API for managing a shopping cart. It allows users to add items to their shopping cart and view the items in the cart using session storage to maintain state across multiple HTTP requests.
 
 ## Folder Structure
 ![Screenshot 2024-07-03 at 2 25 52 PM](https://github.com/rahnayak98/ShoppingCartAPI/assets/22400467/7c899536-2c72-4a8e-a7dd-93b32db8a9a6)
