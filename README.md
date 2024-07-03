@@ -41,7 +41,7 @@ ShoppingCartAPI is a web API for managing a shopping cart. It allows users to ad
   - Initial Get all items(Returns a empty list) indicating empty cart
     <img width="1241" alt="Screenshot 2024-07-03 at 4 13 18 PM" src="https://github.com/rahnayak98/ShoppingCartAPI/assets/22400467/6bbf1517-71da-49c1-91ad-d66b0af3e17a">
   - Added a Apple to the cart.
-<img width="1242" alt="Screenshot 2024-07-03 at 4 14 31 PM" src="https://github.com/rahnayak98/ShoppingCartAPI/assets/22400467/d2410403-f4ef-4073-ac36-8b02d80ddf1d">
+<img width="1217" alt="Screenshot 2024-07-03 at 4 37 02 PM" src="https://github.com/rahnayak98/ShoppingCartAPI/assets/22400467/6ff530d0-e5e4-4b40-9772-b54f9c5b986a">
   - Added a Orange to the cart.
     <img width="1246" alt="Screenshot 2024-07-03 at 4 15 34 PM" src="https://github.com/rahnayak98/ShoppingCartAPI/assets/22400467/5339408c-067e-4f70-85c9-89d65d382eed">
   - Viewed the items in the cart after adding Apple and orange.
