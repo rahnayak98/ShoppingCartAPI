@@ -31,3 +31,4 @@
 /Users/rahulnayak/Desktop/Philips/ShoppingCartAPI/obj/Debug/net8.0/ShoppingCartAPI.pdb
 /Users/rahulnayak/Desktop/Philips/ShoppingCartAPI/obj/Debug/net8.0/ShoppingCartAPI.genruntimeconfig.cache
 /Users/rahulnayak/Desktop/Philips/ShoppingCartAPI/obj/Debug/net8.0/ref/ShoppingCartAPI.dll
+/Users/rahulnayak/Desktop/Philips/ShoppingCartAPI/obj/Debug/net8.0/ShoppingCartAPI.sourcelink.json

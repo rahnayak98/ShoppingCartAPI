@@ -13,7 +13,7 @@ public class ShoppingController: ControllerBase
     {
         this.shoppingCartService = shoppingCartService;
     }
-
+    // HTTP POST endpoint for adding an item to the shopping cart
     [HttpPost("add")]
     public ActionResult AddItem([FromBody] Items item)
     {
@@ -26,7 +26,7 @@ public class ShoppingController: ControllerBase
 
         return CreatedAtAction(nameof(ViewCart), null, item);
     }
-
+    // HTTP GET endpoint for viewing the items in the shopping cart
     [HttpGet("items")]
     public ActionResult<List<Items>> ViewCart()
     {

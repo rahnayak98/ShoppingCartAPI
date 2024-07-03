@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDistributedMemoryCache();
+builder.Services.AddDistributedMemoryCache();          // Adds a distributed memory cache for storing session data.
+
 builder.Services.AddSession(
     options =>
     {
@@ -16,9 +17,9 @@ builder.Services.AddSession(
         options.Cookie.HttpOnly = true;
         options.Cookie.IsEssential = true;
     }
-);
+);                                                      // Add Session Management for retrieving data under a particular session                                                
 
-builder.Services.AddScoped<ShoppingCartService>();
+builder.Services.AddScoped<ShoppingCartService>();      // Dependency injection with scoped lifetime.
 // builder.Services.AddSingleton<ShoppingCartService>();
 
 var app = builder.Build();
@@ -36,4 +37,4 @@ app.MapControllers();
 
 
 
-app.Run();
+app.Run();                     // Runs the application.
