@@ -13,7 +13,7 @@ ShoppingCartAPI is a web API for managing a shopping cart. It allows users to ad
   - Adds an item to the shopping cart stored in the session.
 
 - **`ViewCart(ISession session)`**
-  - Retrieves the current shopping cart from the session.
+  - Retrieves the items in the shopping cart from the session.
 
 - **`Getcart(ISession session)`**
   - Helper function to get the cart from the session. Deserializes the JSON string to a list of items.
