@@ -21,17 +21,32 @@ public class ShoppingController: ControllerBase
         {
             return BadRequest(ModelState);
         }
-        
-        shoppingCartService.AddItem(HttpContext.Session, item);
 
-        return CreatedAtAction(nameof(ViewCart), null, item);
+        try
+        {
+            shoppingCartService.AddItem(HttpContext.Session, item);
+            return CreatedAtAction(nameof(ViewCart), null, item);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Internal server error");
+        }
+      
     }
     // HTTP GET endpoint for viewing the items in the shopping cart
     [HttpGet("items")]
     public ActionResult<List<Items>> ViewCart()
     {
-        var items = shoppingCartService.ViewCart(HttpContext.Session);
-        return Ok(items);
+        try
+        {
+            var items = shoppingCartService.ViewCart(HttpContext.Session);
+            return Ok(items);
+        }
+        catch (Exception e)
+        {
+            return StatusCode(500, "Internal server error");
+        }
+        
         
     }
     

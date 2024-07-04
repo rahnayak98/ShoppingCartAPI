@@ -11,9 +11,17 @@ public class ShoppingCartService
     // Method to add an item to the shopping cart.
     public void AddItem(ISession session, Items item)
     {
-        var cart = Getcart(session);
-        cart.Add(item);
-        Savecart(session, cart);
+        try
+        {
+            var cart = Getcart(session);
+            cart.Add(item);
+            Savecart(session, cart);
+        }
+        catch (Exception ex)
+        { 
+            throw new ApplicationException("There was a problem adding the item to the cart.", ex);
+        }
+       
     }
     
     // Method to view the current shopping cart.
