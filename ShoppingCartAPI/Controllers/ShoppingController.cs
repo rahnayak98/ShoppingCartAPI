@@ -8,6 +8,8 @@ namespace ShoppingCartAPI.Controllers;
 public class ShoppingController: ControllerBase
 {
     private readonly ShoppingCartService shoppingCartService;
+    private readonly ILogger<ShoppingController> logger;
+
 
     public ShoppingController(ShoppingCartService shoppingCartService)
     {
@@ -29,6 +31,7 @@ public class ShoppingController: ControllerBase
         }
         catch (Exception e)
         {
+            logger.LogError(e,"Error adding items to cart");
             return StatusCode(500, "Internal server error");
         }
       
@@ -44,6 +47,7 @@ public class ShoppingController: ControllerBase
         }
         catch (Exception e)
         {
+            logger.LogError(e,"Error viewing items from cart");
             return StatusCode(500, "Internal server error");
         }
         
